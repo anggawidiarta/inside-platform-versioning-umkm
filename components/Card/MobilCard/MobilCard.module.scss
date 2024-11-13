@@ -1,0 +1,53 @@
+@use 'styles/@styles/mixins.scss';
+
+.mobilCard {
+  border: 1px solid rgba(214, 228, 253, 1);
+  max-height: 325px;
+  @include mixins.respond(sm) {
+  }
+
+  &__textTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    @include mixins.respond(sm) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__textDesc {
+    color: rgba(144, 163, 191, 1);
+    font-size: 0.75rem;
+    font-weight: 500;
+    @include mixins.respond(md) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__imageStyle {
+    min-height: 150px;
+    max-height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  &__imageWrapper {
+    padding: 15px 0px;
+    width: 100%;
+    @include mixins.respond(md) {
+      max-width: 225px;
+    }
+    @include mixins.respond(sm) {
+      max-width: 175px;
+    }
+    @include mixins.respond(xs) {
+      max-width: 80%;
+    }
+  }
+
+  &__spaceWrapper {
+    @include mixins.respond(md) {
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+export type TKendaraan = {
+  id: string;
+  slug: string;
+  judulIklanKendaraan: string;
+  merekKendaraan: string;
+  tahunKendaraan: string;
+  jenisKendaraan: string;
+  kategoriKendaraan: string;
+  bahanBakarKendaraan: string;
+  mesinKendaraan: string;
+  jarakTempuhKendaraan: string;
+  hargaKendaraan: number;
+  warnaKendaraan: string;
+  transmisiKendaraan: string;
+  deskripsiKendaraan: string;
+  lokasiKendaraan: string;
+  pinKendaraan: string;
+  noPemilikKendaraan: string;
+  namaPemilikKendaraan: string;
+  foto: string;
+  created_at: string;
+  updated_at: string;
+};

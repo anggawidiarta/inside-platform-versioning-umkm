@@ -1,0 +1,109 @@
+@use '/styles/@styles/mixins.scss';
+@import '@styles/custom';
+
+.header {
+  // #region Header General
+
+  * {
+    font-family: 'plus-jakarta-sans', sans-serif;
+  }
+
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  top: 1px;
+  z-index: 999;
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  &__container {
+    margin: auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    max-height: 200px;
+    padding-top: 25px;
+  }
+
+  &__menuRight {
+    font-size: 16px;
+  }
+
+  :global(.ant-menu-horizontal) {
+    background-color: #0c4c89;
+    border: none;
+    color: white;
+    margin-top: 15px;
+
+    li {
+      font-size: 16px;
+
+      :global(.ant-menu-item-selected) {
+        ::before {
+          border-bottom: 3px solid $primary-color;
+        }
+      }
+    }
+  }
+  // #endregion
+
+  // #region Header For Inside UMKM
+  &__umkm {
+    &__logo {
+      max-width: 180px;
+      max-height: 65px;
+      @include mixins.respond(sm) {
+        max-width: 90px;
+      }
+    }
+
+    &__logoWrapper {
+    }
+
+    &__navigation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+
+      &__search {
+        width: 365px;
+        @include mixins.respond(sm) {
+          max-width: 215px;
+        }
+
+        :global(.ant-input-search-button) {
+          border-radius: 0px 24px 24px 0px !important;
+          border-left-width: 0px;
+          border-color: rgba(196, 196, 196, 1);
+        }
+      }
+
+      :global(.ant-menu-horizontal) {
+        background-color: transparent;
+        border: none;
+        color: black;
+        font-weight: 700;
+        margin-top: 0px;
+        gap: 16px;
+
+        li {
+          font-size: 1rem;
+
+          :global(.ant-menu-item-selected) {
+            ::before {
+              border-bottom: 3px solid $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  // #endregion
+}

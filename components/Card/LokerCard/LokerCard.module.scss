@@ -1,0 +1,64 @@
+@use '/styles/@styles/mixins';
+
+.lokerCard {
+  max-height: 250px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 1rem;
+    max-width: 200px !important;
+    @include mixins.respond(sm) {
+      font-size: 0.875rem;
+      max-width: 125px !important;
+    }
+  }
+
+  &__tag {
+    font-weight: 600;
+    font-size: 0.75rem;
+  }
+
+  &__image {
+    padding: 10px;
+    height: 80px !important;
+  }
+
+  &__lokasi {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  &__desc {
+    font-size: 0.75rem;
+    font-weight: 400;
+    @include mixins.respond(sm) {
+      font-size: 0.625rem;
+    }
+  }
+
+  &__deadlineWrapper {
+    margin-top: 32px;
+    justify-content: space-between;
+    @include mixins.respond(sm) {
+      margin-top: 20px;
+    }
+  }
+
+  &__deadline {
+    font-size: 0.75rem;
+    color: rgba(170, 166, 185, 1);
+    font-weight: 400;
+    @include mixins.respond(sm) {
+      font-size: 0.625rem;
+    }
+  }
+
+  &__gaji {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: rgba(170, 166, 185, 1);
+    @include mixins.respond(sm) {
+      font-size: 0.75rem;
+    }
+  }
+}

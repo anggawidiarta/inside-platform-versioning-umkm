@@ -1,0 +1,21 @@
+.ant-menu-horizontal {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ant-menu-item {
+  height: 300px;
+  line-height: 50px;
+  padding: 0 16px;
+  color: #333;
+}
+
+.ant-menu-item-selected {
+  background-color: blue;
+}
+
+.ant-menu-item:hover {
+  background-color: blue;
+}

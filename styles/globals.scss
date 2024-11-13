@@ -1,0 +1,355 @@
+@use 'styles/@styles/mixins.scss';
+@import '@styles/custom.scss';
+
+@font-face {
+  font-family: 'glacial-indifference';
+  src: url('/fonts/GlacialIndifference-Regular.ttf'); // pattern: /directoryName/file.extension
+}
+
+@font-face {
+  font-family: 'glacial-indifference';
+  src: url('/fonts/GlacialIndifference-Bold.ttf'); // pattern: /directoryName/file.extension
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'league-gothic';
+  src: url('/fonts/LeagueGothic-Regular.ttf'); // pattern: /directoryName/file.extension
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('/fonts/Calibri.ttf'); // pattern: /directoryName/file.extension
+}
+
+@font-face {
+  font-family: 'Calibri Light';
+  src: url('/fonts/CalibriLight.ttf'); // pattern: /directoryName/file.extension
+}
+
+@font-face {
+  font-family: 'plus-jakarta-sans';
+  src: url('/fonts/PlusJakartaSans.ttf'); // pattern: /directoryName/file.extension
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* In your css file where you want to use the font */
+* {
+  font-family: 'plus-jakarta-sans', sans-serif !important;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+
+.font-text {
+  font-family: 'glacial-indifference', sans-serif;
+
+  * {
+    font-family: 'glacial-indifference', sans-serif;
+  }
+}
+
+.iframe-modal {
+  width: 100%;
+  height: 100vh;
+  max-width: 993px;
+  max-height: 558px;
+}
+
+.font-header {
+  font-family: 'league-gothic', sans-serif;
+  letter-spacing: 1px;
+}
+
+.color-dark {
+  color: $base-color-dark !important;
+}
+
+.color-primary {
+  color: $primary-color !important;
+}
+
+.color-red {
+  color: $primary-red !important;
+}
+
+.color-blue {
+  color: $blue !important;
+}
+
+.color-purple {
+  color: $purple !important;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.text-lg {
+  font-size: 16px;
+  letter-spacing: 1%;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+.text-muted {
+  color: $secondary-netral;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 30px;
+
+  @media (max-width: 576px) {
+    padding: 15px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400 !important;
+}
+
+input {
+  font-family: 'glacial-indifference', sans-serif;
+}
+
+.ant-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-btn-primary.ant-btn-background-ghost {
+  background-color: $primary-color;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.ant-btn-default.ant-btn-background-ghost {
+  background-color: #ffffff;
+  color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.ant-progress .ant-progress-bg {
+  background-color: $primary-color;
+}
+
+.ant-btn-ghost {
+  color: $secondary-color;
+  background-color: $netral;
+}
+
+.ant-btn-link {
+  color: white;
+  background-color: #ff9228;
+}
+
+.ant-btn-default {
+  border-color: $primary-color;
+  color: $primary-color;
+}
+
+.ant-steps-item-icon {
+  background-color: transparent !important;
+  border: 1.5px solid white !important;
+  * {
+    color: white !important ;
+    font-size: 16px;
+  }
+}
+
+.ant-steps-item-title::after {
+  height: 1.5px !important;
+  top: 5px !important;
+  inset-inline-start: -8px !important;
+}
+
+.ant-steps-item {
+  padding-inline-start: 0px !important;
+}
+
+.ant-steps-item-finish .ant-steps-item-icon {
+  background-color: white !important;
+  * {
+    color: $green !important;
+  }
+}
+
+.ant-steps-item-process .ant-steps-item-icon {
+  background-color: white !important;
+  font-weight: bold;
+  * {
+    color: $primary-color !important;
+  }
+}
+
+.ant-steps-item-wait .ant-steps-item-icon {
+  background-color: $primary-color !important;
+  * {
+    color: white !important;
+  }
+}
+
+.ant-tag {
+  border: none !important;
+  padding: 3px 13px;
+}
+
+.ant-tag-orange {
+  color: $primary-color;
+  background-color: #ffecda;
+}
+
+.ant-input-number .ant-input-number-input {
+  font-family: 'Calibri Light', sans-serif;
+}
+
+.ant-select .ant-select-selector .ant-select-selection-item {
+  font-family: 'Calibri Light', sans-serif;
+}
+
+.ant-input,
+.ant-select-selector,
+.ant-input-affix-wrapper,
+.ant-input-number {
+  border-radius: 4px !important;
+  border-color: $dark-netral !important;
+}
+
+.ant-typography a {
+  color: $primary-color;
+}
+
+.ant-typography strong {
+  font-family: 'Calibri', sans-serif;
+}
+
+.ant-upload.ant-upload-select {
+  width: 100%;
+}
+
+// .ant-form-item-required:before {
+//   content: "*"; /* Set the asterisk as the content */
+//   margin-left: 4px; /* Adjust the margin to separate from label */
+//   display: inline-block; /* Make it an inline-block element */
+//   width: 0; /* Set width to 0 to not affect layout */
+// }
+
+.card-body .ant-card-body {
+  flex: 1 !important;
+}
+
+.bg-success {
+  background-color: $green;
+}
+
+// for react quill
+.ql-align-right {
+  text-align: right !important;
+}
+.ql-align-center {
+  text-align: center !important;
+}
+.ql-align-left {
+  text-align: left !important;
+}
+.ql-toolbar {
+  background-color: rgba(225, 233, 244, 1);
+}
+.ql-container {
+  height: 150px !important;
+}
+
+// for swiper js
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* // border-radius: 10px; */
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.mySwiper2 {
+  height: 620px;
+  width: 1040px;
+  border-radius: 10px;
+  @include mixins.respond(md) {
+    max-height: 235px;
+  }
+}
+
+.mySwiper {
+  height: 90px;
+  width: 1040px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.mySwiper .swiper-slide {
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}

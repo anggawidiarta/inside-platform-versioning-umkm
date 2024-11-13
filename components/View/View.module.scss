@@ -1,0 +1,52 @@
+@import "@styles/custom";
+
+.view {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+
+  &__textDescription {
+    padding: 20px;
+    background-color: $netral;
+    border-radius: 6px;
+  }
+}
+
+@import "@styles/custom.scss";
+
+.competitionForm {
+  background-color: white;
+  border-radius: 8px;
+  padding: 35px;
+  box-shadow: $card-shadow;
+
+  &__textLanding {
+    margin: 28px 0px;
+    text-align: center;
+
+    p {
+      font-size: 161 px;
+    }
+  }
+}
+
+.viewLoading {
+  background-color: white;
+  border-radius: 8px;
+  padding: 35px;
+  box-shadow: $card-shadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.reactQuillView {
+  p, span, b, a {
+    font-size: 16px !important;
+  }
+
+  h1, h2, h3, h4 {
+    line-height: 0;
+  }
+}

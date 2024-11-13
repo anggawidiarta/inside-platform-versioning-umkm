@@ -1,0 +1,87 @@
+@import '@styles/custom';
+
+%bg {
+  z-index: auto;
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.mainLayout {
+  &__background {
+    @extend %bg;
+    height: 360px;
+
+    &__small {
+      @extend %bg;
+      height: 200px;
+    }
+
+    &__default {
+      @extend %bg;
+      background-image: url('/BG-2.svg');
+    }
+    &__red {
+      @extend %bg;
+      background-image: url('/BG-Informasi-Umum.svg');
+    }
+    &__cyan {
+      @extend %bg;
+      background-image: url('/BG-Inspirasi-Asyik.svg');
+    }
+    &__purple {
+      @extend %bg;
+      background-image: url('/BG-Belajar-Inovasi.svg');
+    }
+    &__detail {
+      @extend %bg;
+      background-image: url('/bg-detail.png');
+      background-size: cover;
+    }
+    &__white {
+      @extend %bg;
+      background-color: white !important;
+    }
+  }
+
+  &__container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 30px;
+    background-color: transparent;
+
+    @media (max-width: 576px) {
+      padding: 15px;
+    }
+  }
+
+  &__backButtonContainer {
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  &__backdrop {
+    background-color: $netral;
+  }
+
+  &__pageTitle {
+    background-color: $primary-color;
+    height: 90px;
+    text-align: center;
+
+    :global(.ant-typography) {
+      font-size: 20px;
+      color: white;
+    }
+  }
+
+  &__buttonBack {
+    float: left;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: rgba(255, 56, 111, 0.15);
+    margin-left: 30px;
+  }
+}

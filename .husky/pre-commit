@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+#Type Checking
+yarn format-code
+yarn type-check 
+yarn git-add

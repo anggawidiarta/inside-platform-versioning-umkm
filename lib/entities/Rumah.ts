@@ -1,0 +1,23 @@
+export type TRumah = {
+  id: string;
+  slug: string;
+  judulIklanProperti: string;
+  luasTanahProperti: string;
+  luasBangunanProperti: string;
+  kamarTidurProperti: string;
+  tipeProperti: string;
+  hargaProperti: number;
+  deskripsiProperti: string;
+  kamarMandiProperti: string;
+  lantaiProperti: string;
+  fasilitasProperti: string[];
+  lokasiProperti: string;
+  sertifikasiProperti: string;
+  pinProperti: string;
+  noPemilikProperti: string;
+  namaPemilikProperti: string;
+  alamatPemilikProperti: string;
+  foto: string;
+  created_at: string;
+  updated_at: string;
+};
