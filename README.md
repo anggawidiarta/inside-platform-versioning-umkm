@@ -1,6 +1,6 @@
 # Inside Platform Landing Page
 
-# Requirements & Stack:
+# Requirements & Stack
 
 - NodeJS LTS 16+
 - Yarn 1.22.10+
@@ -26,7 +26,3 @@
 - Copy file `.env.example` rename to `.env` then setting the configuration
 - Run `yarn install`
 - Run `yarn build`
-
-## Responsible Developer
-
-- FE: Haidar Rahman https://ptdot.slack.com/team/U03ECN6BA3G
